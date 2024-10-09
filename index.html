@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Feedback</h1>
+        
+        <div class="para">
+            <p>Your feedback is valuable to us! Please take a moment to share your thoughts on the workshops and courses you've attended. Your input will help us improve our programs and update your profile to better serve your needs.</p>
+        </div>
+        
+        <form id="Form">
+            <div class="feedback-section">
+                <h2>Workshop Feedback</h2>
+                <div class="question">How would you rate the overall quality of the workshops you've attended?</div>
+                <div class="rate">
+                    <input type="radio" id="ws1" name="workshop_rating" value="1">
+                    <label for="ws1">1</label>
+                    <input type="radio" id="ws2" name="workshop_rating" value="2">
+                    <label for="ws2">2</label>
+                    <input type="radio" id="ws3" name="workshop_rating" value="3">
+                    <label for="ws3">3</label>
+                    <input type="radio" id="ws4" name="workshop_rating" value="4">
+                    <label for="ws4">4</label>
+                    <input type="radio" id="ws5" name="workshop_rating" value="5">
+                    <label for="ws5">5</label>
+                </div>
+                <div class="question">How relevant were the workshop topics to your studies or career goals?</div>
+                <div class="rate">
+                    <input type="radio" id="wr1" name="workshop_relevance" value="1">
+                    <label for="wr1">1</label>
+                    <input type="radio" id="wr2" name="workshop_relevance" value="2">
+                    <label for="wr2">2</label>
+                    <input type="radio" id="wr3" name="workshop_relevance" value="3">
+                    <label for="wr3">3</label>
+                    <input type="radio" id="wr4" name="workshop_relevance" value="4">
+                    <label for="wr4">4</label>
+                    <input type="radio" id="wr5" name="workshop_relevance" value="5">
+                    <label for="wr5">5</label>
+                </div>
+                
+                <div class="question">Please provide any additional comments about the workshops:</div>
+                <textarea name="comment" placeholder="Your comments here..."></textarea>
+            </div>
+            
+            <div class="feedback-section">
+                <h2>Course Feedback</h2>
+                <div class="rate">
+                    <input type="radio" id="cq1" name="course_rating" value="1"><label for="cq1">1</label>
+                    <input type="radio" id="cq2" name="course_rating" value="2"><label for="cq2">2</label>
+                    <input type="radio" id="cq3" name="course_rating" value="3"><label for="cq3">3</label>
+                    <input type="radio" id="cq4" name="course_rating" value="4"><label for="cq4">4</label>
+                    <input type="radio" id="cq5" name="course_rating" value="5"><label for="cq5">5</label>
+                </div>
+                
+                <div class="question">How well have you been able to apply the skills learned in your courses?</div>
+                <div class="rate">
+                    <input type="radio" id="ca1" name="rating" value="1"><label for="ca1">1</label>
+                    <input type="radio" id="ca2" name="rating" value="2"><label for="ca2">2</label>
+                    <input type="radio" id="ca3" name="rating" value="3"><label for="ca3">3</label>
+                    <input type="radio" id="ca4" name="rating" value="4"><label for="ca4">4</label>
+                    <input type="radio" id="ca5" name="rating" value="5"><label for="ca5">5</label>
+                </div>
+                
+                <div class="question">Please provide any additional comments about the courses:</div>
+                <textarea name="course_comments" placeholder="Your comments here..."></textarea>
+            </div>
+            
+            <div class="feedback-section">
+                <h2>Overall Experience</h2>
+                
+                <div class="question">How likely are you to recommend our programs to others?</div>
+                <div class="rate">
+                    <input type="radio" id="r1" name="overall_recommendation" value="1"><label for="r1">1</label>
+                    <input type="radio" id="r2" name="overall_recommendation" value="2"><label for="r2">2</label>
+                    <input type="radio" id="r3" name="overall_recommendation" value="3"><label for="r3">3</label>
+                    <input type="radio" id="r4" name="overall_recommendation" value="4"><label for="r4">4</label>
+                    <input type="radio" id="r5" name="overall_recommendation" value="5"><label for="r5">5</label>
+                </div>
+                
+                <div class="question">Any other comments or suggestions to help us improve?</div>
+                <textarea name="comments" placeholder="Your comments here..."></textarea>
+            </div>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
